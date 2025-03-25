@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html">
+                <img src="image/logo.png" alt="">
+            </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+        <h1>About us</h1>
+
+    </section>
+    <!-- ---------about us content------------ -->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the World's Largest University</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quod nisi sed voluptates necessitatibus
+                    reprehenderit repellendus expedita saepe cumque dolore cum, odit laborum eligendi iusto.</p>
+                <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="image/about.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- ------------------footer---------------------------- -->
+    <section class="footer">
+        <h1>About Us</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, unde dolores voluptate suscipit nam quia
+            in magnam maiores nisi voluptas distinctio odio reprehenderit temporibus a debitis! Eligendi quaerat minus
+            consequatur perspiciatis earum. Quod unde tempora corporis. Culpa pariatur sed expedita.</p>
+        <div class="icons">
+            <!-- <i class="fa fa-facebook"></i> -->
+            <i class="fa fa-facebook-square"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart"></i> by Easy Tutorials
+        </p>
+    </section>
+    <!-- ---------------java sript  for toggle menu --------------- -->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>

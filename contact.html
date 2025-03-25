@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html">
+                <img src="image/logo.png" alt="">
+            </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact us</h1>
+
+    </section>
+    <!-- ---------contact us content------------ -->
+    <section class="location">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7198.650507987268!2d77.76470249999996!3d12.979598499999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae0e0c0b584d1b%3A0x2f5afa70c37d0720!2sChannasandra%2C%20Bengaluru%2C%20Karnataka%20560067!5e1!3m2!1sen!2sin!4v1742883044449!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </section>
+    <div class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>Chanasandra, R C Brindaban</h5>
+                        <p>Bamgaluru , KArnataka</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>123456789</h5>
+                        <p> Monday to Saturday, 10AM to 6AM</p>
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>mamuni@gmail.com</h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="">
+                    <input type="text" placeholder="Enter your Name" required>
+                    <input type="email" placeholder="Enter Email Adress" required>
+
+                    <input type="text" placeholder="Enter your Subject" required>
+                    <textarea name="" rows="8" placeholder="Message" id=""></textarea>
+                    <button type="submit" class="hero-btn red-btn"> Send Message</button>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------footer---------------------------- -->
+    <section class="footer">
+        <h1>About Us</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, unde dolores voluptate suscipit nam quia
+            in magnam maiores nisi voluptas distinctio odio reprehenderit temporibus a debitis! Eligendi quaerat minus
+            consequatur perspiciatis earum. Quod unde tempora corporis. Culpa pariatur sed expedita.</p>
+        <div class="icons">
+            <!-- <i class="fa fa-facebook"></i> -->
+            <i class="fa fa-facebook-square"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart"></i> by Easy Tutorials
+        </p>
+    </section>
+    <!-- ---------------java sript  for toggle menu --------------- -->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
